@@ -1,6 +1,9 @@
 
 *{
-    margin: 0;
+    margin: 0%;
+}
+body{
+    overflow-x: hidden
 }
 .main1{
     display: grid;
@@ -29,9 +32,8 @@ a:hover{
 .cont{
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: center;
-    margin-left: 190px;
-    margin-right: 160px;
+    justify-content: space-evenly;
+    margin-left: 140px;
 }
 p{
     text-align: center;
@@ -41,7 +43,7 @@ p{
     padding:10px;
 }
 img{
-    width:80%;
+    width:60%;
     box-shadow: 2px 2px 5px 0px;
 }
 .c1 p{
@@ -106,11 +108,15 @@ img{
 }
 .fot{
     text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
 
 }
 .fot p{
-    margin-left: 240px;
+    margin-left: px;
     letter-spacing: 2px;
+    width:100%
 }
 .footer{
     display:grid;
@@ -154,3 +160,107 @@ img{
 .child1{
     margin-left: 80px;
 }
+@media (max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+}
+@media (max-width:600px){
+    .main1{
+        font-size: 10px;
+        position: fixed;
+        z-index: 1;
+    }
+
+}
+@media (max-width:600px){
+    .cont{
+        grid-template-columns: 100%;
+
+
+    }
+    .c1{
+        width:100%;
+        margin:20px
+
+    }
+    .c1 p{
+        font-size: 25px;
+        width:90%;
+
+    }
+    img{
+        width: 80%;
+        height: 80vh;
+        
+    }
+    .foot{
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        justify-content: space-evenly;
+    }
+    .a,.b,.c,.d,.e,.f{
+        margin: 20px;
+
+    }
+    
+}
+@media (max-width:600px){
+    .foot{
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        justify-content: space-evenly;
+    }
+    .a,.b,.c,.d,.e,.f{
+        margin: 20px;
+
+    }
+}
+@media (max-width:600px){
+    .fot{
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+    .fot img{
+        width:80%;
+        margin-left:80px;
+    }
+    .fot h4{
+        text-align: center;
+        margin-left:120px;
+    }
+    .v2{
+        font-size:20px;
+        margin-left: 100px;
+        width:80%;
+
+    }
+    .v2 h4{
+        margin-left: 50px;
+    }
+    
+}
+@media (max-width:600px){
+    .footer{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .child1{
+        font-size: 20px;
+        
+    }
+    .child2{
+        display: flex;
+    }
+    .child2 img{
+        height: 20vh;
+    }
+    .child2 h4{
+        text-align: center;
+    }
+}
+
+
